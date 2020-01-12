@@ -1,0 +1,96 @@
+/* RGB */
+$light: rgba(255, 255, 242, 1);
+$darkblue: rgba(68, 100, 173, 1);
+$background: rgba(164, 176, 245, 1);
+$alternate: rgba(187, 197, 170, 1);
+$dark-alt: rgba(64, 120, 153, 1);
+
+$phone: "only screen and (max-width : 700px)";
+
+
+
+.wrapper {
+	padding: 10px 0 20px 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	h1 {
+		font-size: 3.6rem;
+		font-weight: bold;
+		color: $darkblue;
+		text-shadow: 2px 2px $background;
+	}
+
+	#date {
+		font-size: 2.4rem;
+	}
+
+	img {
+		width: 50%;
+		height: 50vh;
+		margin: 10px 0 10px 0;
+		@media #{$phone} {
+			width: 85%;
+		}
+	}
+	.date {
+		font-size: 2rem;
+        color: $darkblue;
+        margin-right: 5px;
+    }
+    
+    .date-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	p {
+		font-size: 1.2rem;
+		width: 50%;
+		font-family: 'Montserrat';
+        color: $darkblue;
+		background-color: $light;
+		@media #{$phone} {
+			width: 85%;
+		}
+	}
+	.hidden {
+		display: none;
+	}
+
+	.show {
+		display: block;
+		cursor: pointer;
+	}
+
+	form {
+		display: flex;
+		align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        input{
+            height: 30px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            color: $darkblue
+        }
+        .dateSelector{
+            height: 40px;
+            color: $light;
+            background-color: $darkblue;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+		span {
+			margin-right: 2px;
+			color: $darkblue;
+			font-size: 1.4rem;
+			cursor: pointer;
+		}
+	}
+}
