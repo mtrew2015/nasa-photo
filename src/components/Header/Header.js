@@ -4,9 +4,11 @@ import './Header.scss';
 
 function Header() {
 	return (
-		<div className="header">
+        <div className="header">
+            <nav>
 			<NavLink to='/'>Photo Of The Day</NavLink>
-			<NavLink to='/mars'>Mars Stuff</NavLink>
+            <NavLink to='/mars'>Mars Stuff</NavLink>
+            </nav>
 		</div>
 	);
 }

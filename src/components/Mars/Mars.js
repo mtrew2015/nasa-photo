@@ -38,17 +38,18 @@ function Mars() {
 				{data.slice(1, 6).map((day,idx) => (
 					<div className="day" key={idx}>
 						<p><span>Date:</span>{day.First_UTC.slice(0, 10)}</p>
-						<p><span>Average</span>{day.AT.av}</p>
+						<p><span>Average</span>{day.AT.av.toFixed(0)}&deg;</p>
 
-						<p><span>High:</span>{day.AT.mx}</p>
-						<p><span>Low</span>{day.AT.mn}</p>
+						<p><span>High:</span>{day.AT.mx.toFixed(0) }&deg;</p>
+						<p><span>Low</span>{day.AT.mn.toFixed(0)}&deg;</p>
 						<p><span>Data Points:</span> {day.AT.ct}</p>
 						<p><span>Season:</span>{day.Season}</p>
 					</div>
 				))}
             </div>
-            <div>
             <h2>Mars Rover Photos</h2>
+            <div className="photo-container">
+            
             {console.log(pictures, 'pictures.photos')}
             {pictures && pictures.map((pic,idx)=> (
                 <img key={idx} alt="Mars Rover Photos" src={pic.img_src}/>

@@ -3,15 +3,22 @@ $darkblue: rgba(68, 100, 173, 1);
 $background: rgba(164, 176, 245, 1);
 $alternate: rgba(187, 197, 170, 1);
 $dark-alt: rgba(64, 120, 153, 1);
+$mars: #934838;
+$mars-alt:rgb(230, 159, 101);
 
 .marsWrapper {
+background: #f7f8f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7f8f8, #acbb78); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7f8f8, #acbb78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	width: 100%;
 	display: flex;
 	flex-direction: column;
     align-items: center;
     h2{
-        font-size: 2.4rem;
-        color: $dark-alt;
+        font-size: 4rem;
+        color: $mars;
     }
 }
 
@@ -35,9 +42,22 @@ $dark-alt: rgba(64, 120, 153, 1);
 		border: 2px solid $dark-alt;
 		border-left: none;
 		p {
-			font-size: 1.2;
-			color: $darkblue;
+			font-size: 1.4rem;
+			color: $mars;
 		}
 		
 	}
+}
+
+.photo-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img{
+        width: 20%;
+        height: 30vh;
+        margin: 10px;
+        box-shadow: 12px 12px 2px 1px $alternate;
+    }
 }

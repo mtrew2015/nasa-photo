@@ -8,13 +8,20 @@ $dark-alt: rgba(64, 120, 153, 1);
 .header{
     height: 10vh;
     display: flex;
-    width: 50%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
     align-items: center;
+    background-color: #0B3D91;
+
+    nav{
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
 
     a{
         text-decoration: none;
         font-size: 1.8rem;
-        color: $darkblue;
+        color: whitesmoke
     }
 }
