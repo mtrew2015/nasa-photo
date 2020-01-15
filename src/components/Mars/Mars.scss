@@ -41,7 +41,7 @@ $tablet: "only screen and (max-width : 1300px)";
     }
     @media #{$phone} {
         flex-direction: column-reverse;
-        width: 50%;
+        width: 70%;
 	}
 
 	background: $light;
@@ -92,11 +92,12 @@ $tablet: "only screen and (max-width : 1300px)";
 		height: 30vh;
 		margin: 10px;
 		box-shadow: 12px 12px 2px 1px black;
-		@media #{$phone} {
-			width: 45%;
-        }
+	
         @media #{$tablet}{
             width: 30%;
+        }
+        	@media #{$phone} {
+			width: 75%;
         }
 	}
 }
