@@ -4,7 +4,6 @@ $background: rgba(164, 176, 245, 1);
 $alternate: rgba(187, 197, 170, 1);
 $dark-alt: rgba(64, 120, 153, 1);
 
-
 html,
 body,
 div,
@@ -86,12 +85,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 62.5%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -106,41 +105,40 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1.5;
-    background-color: $light;
+	line-height: 1.5;
+	background: rgb(218, 220, 227);
+	background: linear-gradient(90deg, rgba(218, 220, 227, 1) 0%, rgba(160, 189, 209, 1) 28%);
 }
 
 ol,
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+	quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-body{
-    font-family: 'Montserrat',
-    sans-serif;
-    font-family: 'Exo 2',
-    sans-serif;
-
+body {
+	font-family: 'Montserrat', sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Seymour One', sans-serif;
 }

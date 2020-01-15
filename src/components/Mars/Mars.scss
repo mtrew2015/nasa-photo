@@ -4,36 +4,40 @@ $background: rgba(164, 176, 245, 1);
 $alternate: rgba(187, 197, 170, 1);
 $dark-alt: rgba(64, 120, 153, 1);
 $mars: #934838;
-$mars-alt:rgb(230, 159, 101);
+$mars-alt: rgb(230, 159, 101);
 
 .marsWrapper {
-background: #f7f8f8; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f7f8f8, #acbb78); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f7f8f8, #acbb78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background: rgb(218, 220, 227);
+    background: linear-gradient(90deg, rgba(218, 220, 227, 1) 0%, rgba(160, 189, 209, 1) 28%);
+    font-family: 'Seymour One', sans-serif;
 
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-    align-items: center;
-    h2{
-        font-size: 4rem;
-        color: $mars;
-    }
+	align-items: center;
+	h2 {
+		font-size: 4rem;
+		color: $darkblue;
+	}
+	.rover {
+        color: $dark-alt;
+        font-family: 'Seymour One', sans-serif;
+	}
 }
 
 .marsWeather {
-    span{
-        color: $dark-alt;
-        font-weight: bolder;
-        margin-right: 3px;
-    }
+	background: $light;
+	span {
+		color: $dark-alt;
+		font-weight: bolder;
+		margin-right: 3px;
+	}
 	display: flex;
 	flex-direction: row-reverse;
-    width: 75%;
-    div:nth-child(5) {
-			border-left: 2px solid $dark-alt; 
-		}
+	width: 75%;
+	div:nth-child(5) {
+		border-left: 2px solid $dark-alt;
+	}
 
 	.day {
 		display: flex;
@@ -42,22 +46,21 @@ background: #f7f8f8; /* fallback for old browsers */
 		border: 2px solid $dark-alt;
 		border-left: none;
 		p {
-			font-size: 1.4rem;
-			color: $mars;
+			font-size: 1.2rem;
+			color: $darkblue;
 		}
-		
 	}
 }
 
-.photo-container{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    img{
-        width: 20%;
-        height: 30vh;
-        margin: 10px;
-        box-shadow: 12px 12px 2px 1px $alternate;
-    }
+.photo-container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	img {
+		width: 20%;
+		height: 30vh;
+		margin: 10px;
+		box-shadow: 12px 12px 2px 1px black;
+	}
 }
