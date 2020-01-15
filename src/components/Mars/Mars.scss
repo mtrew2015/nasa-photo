@@ -37,10 +37,11 @@ $tablet: "only screen and (max-width : 1300px)";
 .marsWeather {
 	
 	@media #{$tablet} {
-		width: 90%;
+		width: 95%;
     }
     @media #{$phone} {
-		flex-direction: column;
+        flex-direction: column-reverse;
+        width: 50%;
 	}
 
 	background: $light;
@@ -73,7 +74,10 @@ $tablet: "only screen and (max-width : 1300px)";
 			color: $darkblue;
 			@media #{$tablet} {
 				font-size: 1rem;
-			}
+            }
+            @media #{$phone}{
+                font-size: 1.2rem;
+            }
 		}
 	}
 }
