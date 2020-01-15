@@ -1,0 +1,20 @@
+$light: rgba(255, 255, 242, 1);
+$darkblue: rgba(68, 100, 173, 1);
+$background: rgba(164, 176, 245, 1);
+$alternate: rgba(187, 197, 170, 1);
+$dark-alt: rgba(64, 120, 153, 1);
+
+
+.header{
+    height: 10vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: $darkblue;
+    }
+}

@@ -29,7 +29,6 @@ function Card() {
         setDate(date)
         console.log(date)
         let formattedDate = moment(date).format('YYYY-MM-DD');
-		console.log(formattedDate);
 		axios
 			.get(`https://api.nasa.gov/planetary/apod?api_key=JnWo6HiIwC9BG0xa2UyobaexzaMVqCbQi9h9hs6q&date=${formattedDate}`)
 			.then((res) => setData(res.data))
