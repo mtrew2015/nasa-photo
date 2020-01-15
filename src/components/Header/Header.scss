@@ -3,8 +3,14 @@ $darkblue: rgba(68, 100, 173, 1);
 $background: rgba(164, 176, 245, 1);
 $alternate: rgba(187, 197, 170, 1);
 $dark-alt: rgba(64, 120, 153, 1);
+$phone: "only screen and (max-width : 1100px)";
+$tablet: "only screen and (max-width : 1300px)";
+
 
 .header {
+    @media #{$phone} {
+		 height: 15vh;
+		}
 	height: 10vh;
 	display: flex;
 	width: 100%;
@@ -16,12 +22,30 @@ $dark-alt: rgba(64, 120, 153, 1);
 	nav {
 		width: 50%;
 		display: flex;
-		justify-content: space-evenly;
+        justify-content: space-evenly;
+     
+        @media #{$tablet}{
+            width: 75%;
+        }
+           @media #{$phone} {
+            flex-direction: column;
+            width: 100%;
+             a:nth-child(1){
+                border-bottom: none;
+            }
+        }
 	}
 
 	a {
 		text-decoration: none;
-		font-size: 1.8rem;
-		color: $dark-alt;
+        font-size: 1.8rem;
+        width: 100%;
+        color: $dark-alt;
+        
+        @media #{$phone} {
+            flex-direction: column;
+            border: 2px solid;
+           
+		}
 	}
 }
